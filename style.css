@@ -46,3 +46,27 @@ button:hover{
     background-color: white;
     border: 1px solid black;
 }
+
+input{
+    margin: 10px auto;
+    display: block;
+    width: 200px;
+    height: 30px;
+    border-radius: 20px;
+    border: 0;
+    background-color: black;
+    color: white;
+    text-align: center;
+    transition: all 0.30s ease-in;
+    display: none;
+}
+
+.input-shown{
+    display: block;   
+}
+
+input:hover{
+    color: black;
+    background-color: white;
+    border: 1px solid black;
+}
