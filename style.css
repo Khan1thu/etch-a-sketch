@@ -1,0 +1,48 @@
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.squares{
+    display: flex;
+}
+
+.square{
+    border: 1px solid green;
+    width: 16px;
+    height: 16px;
+    background-color: red;
+    margin: 50px 10px;
+    cursor: pointer;
+    transition: all 0.50s ease-out;
+}
+
+.square:hover{
+    background-color: blue;
+}
+
+button{
+    width: 150px;
+    height: 30px;
+    border-radius: 20px;
+    border: 0;
+    background-color: black;
+    color: white;
+    cursor: pointer;
+    transition: all 0.30s ease-in;
+}
+
+button:hover{
+    color: black;
+    background-color: white;
+    border: 1px solid black;
+}
