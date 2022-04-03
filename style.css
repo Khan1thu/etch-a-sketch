@@ -14,14 +14,17 @@ body{
 
 .squares{
     display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 10px auto;
 }
 
 .square{
     border: 1px solid green;
     width: 16px;
     height: 16px;
-    background-color: red;
-    margin: 50px 10px;
+    margin: 10px 10px;
     cursor: pointer;
     transition: all 0.50s ease-out;
 }

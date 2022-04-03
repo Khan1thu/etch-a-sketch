@@ -3,10 +3,12 @@ const squares = document.querySelector(".squares");
 const clear = document.querySelector(".clear");
 const input = document.querySelector("input");
 
-for(let i = 0; i < 16; i++){
-    const div = document.createElement("div");
-    div.classList.add("square");
-    squares.appendChild(div);
+function createSquare(s){
+    for(let i = 0; i < s; i++){
+        const div = document.createElement("div");
+        div.classList.add("square");
+        squares.appendChild(div);
+    }   
 }
 
 clear.addEventListener("click",(e)=>{
@@ -14,5 +16,6 @@ clear.addEventListener("click",(e)=>{
     square.forEach(e => {
         e.style.display = "none";
     })
-    input.classList.add("input-shown");
+    const user = prompt("How many grids Do you want?");
+    createSquare(user);
 })
